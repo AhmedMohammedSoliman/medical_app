@@ -26,10 +26,12 @@ class _SplashSceenState extends State<SplashSceen> {
     return Container(
       color: Colors.white,
       child: Center(
-        child: Column(
+        child: Row(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            Image(image: AssetImage("assets/images/logo1.png")),
+            Image(image: AssetImage("assets/images/logo1.png"), width: 80, height: 80,),
+            SizedBox(width: 10,),
+            Text("Medico" , style: Theme.of(context).textTheme.headline1,)
 
           ],
         ),
